@@ -1,0 +1,15 @@
+
+- add_frame:
+     name: bunny_origin
+     X_PF:
+         base_frame: world
+         rotation: !Rpy { deg: [-90.0, 0.0, -90.0 ]}
+         translation: [1.75, 0, 0.09515]
+
+- add_model:
+     name: bunny
+     file: file:///home/shaw/Desktop/6.4210_Final_Project/sketchbot/models/bunny.sdf
+
+- add_weld:
+     parent: world
+     child: bunny::bunny_center
