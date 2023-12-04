@@ -1,0 +1,7 @@
+
+- add_model:
+    name: canvas
+    file: file:///home/shaw/Desktop/6.4210_Final_Project/sketchbot/models/canvas.sdf
+- add_weld:
+    parent: world
+    child: canvas::canvas_top_center  
