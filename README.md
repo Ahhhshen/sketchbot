@@ -2,7 +2,7 @@
 
 First, clone this repo to your local project file folder, (note: please put it into a independent folder!)
 
-## set up the loacal env
+## Set up the local env
 
 a. Inside your pset/project folder, create the environment: `python3 -m venv env`
 
