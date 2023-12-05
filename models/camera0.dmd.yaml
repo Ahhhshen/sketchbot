@@ -1,0 +1,28 @@
+
+- add_frame:
+    name: camera_staging
+    X_PF:
+        base_frame: world
+        rotation: !Rpy { deg: [0, 0, 0]}
+
+- add_frame:
+    name: camera_origin
+    X_PF:
+        base_frame: camera_staging
+        rotation: !Rpy { deg: [-90.0, 0, 270.0]}
+        translation: [1, 0, .1]
+
+- add_model:
+    name: camera
+    file: package://manipulation/camera_box.sdf
+
+- add_weld:
+    parent: camera_origin
+    child: camera::base
+
+cameras:
+    main_camera:
+        name: camera
+        depth: True
+        X_PB:
+            base_frame: camera::base
