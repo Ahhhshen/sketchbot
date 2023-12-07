@@ -14,7 +14,7 @@
         </inertia>
       </inertial>
     <visual name="bottom">
-        <pose>0.0 0.0 0.445 0 0 0</pose>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
         <geometry>
           <box>
             <size>0.48 0.64 0.015</size>
@@ -25,7 +25,7 @@
         </material>
       </visual>
       <collision name="bottom">
-        <pose>0.0 0.0 0.445 0 0 0</pose>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
         <geometry>
           <box>
             <size>0.48 0.64 0.015</size>
@@ -38,7 +38,7 @@
       </collision>
     </link>
     <frame name="canvas_top_center">
-      <pose relative_to="canvas_link">-0.5 0 0.47 0 0 0</pose>
+      <pose relative_to="canvas_link">-0.5 0 0.0 0 0 0</pose>
     </frame>
   </model>
 </sdf>
