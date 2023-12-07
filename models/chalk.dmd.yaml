@@ -1,0 +1,11 @@
+
+- add_model:
+    name: chalk
+    file: file:///home/shaw/Desktop/6.4210_Final_Project/sketchbot/models/chalk.sdf
+
+- add_weld:
+    parent: wsg::left_finger 
+    child: chalk::chalk_link
+    X_PC:
+        translation: [-0.016, 0.06, 0]
+        rotation: !Rpy { deg: [90, 0, 0]}

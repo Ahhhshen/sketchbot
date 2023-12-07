@@ -1,44 +1,44 @@
 <?xml version="1.0"?>
 <sdf xmlns:drake="http://drake.mit.edu" version="1.8">
-  <model name="canvas">
-    <link name="canvas_link">
+  <model name="chalk">
+    <link name="chalk_link">
       <inertial>
-        <mass>18.70</mass>
+        <mass>0.1</mass>
         <inertia>
-          <ixx>0.79</ixx>
+          <ixx>0.000202</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.53</iyy>
+          <iyy>0.000200</iyy>
           <iyz>0</iyz>
-          <izz>1.2</izz>
+          <izz>0.000402</izz>
         </inertia>
       </inertial>
     <visual name="bottom">
-        <pose>0.0 0.0 0.445 0 0 0</pose>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
         <geometry>
-          <box>
-            <size>0.48 0.64 0.015</size>
-          </box>
+          <cylinder>
+            <radius>0.005</radius>
+            <length>0.1</length>
+          </cylinder>
         </geometry>
         <material>
           <diffuse>0.9 0.9 0.9 1.0</diffuse>
         </material>
       </visual>
       <collision name="bottom">
-        <pose>0.0 0.0 0.445 0 0 0</pose>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
         <geometry>
-          <box>
-            <size>0.48 0.64 0.015</size>
-          </box>
+          <cylinder>
+              <radius>0.015</radius>
+              <length>0.1</length>
+          </cylinder>
         </geometry>
         <drake:proximity_properties>
           <drake:compliant_hydroelastic/>
-          <drake:hydroelastic_modulus>1.0e6</drake:hydroelastic_modulus>
+          <drake:mesh_resolution_hint>0.01</drake:mesh_resolution_hint>
+          <drake:hydroelastic_modulus>1.0e8</drake:hydroelastic_modulus>
         </drake:proximity_properties>
       </collision>
     </link>
-    <frame name="canvas_top_center">
-      <pose relative_to="canvas_link">-0.5 0 0.47 0 0 0</pose>
-    </frame>
   </model>
 </sdf>
