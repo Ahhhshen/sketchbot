@@ -40,7 +40,7 @@
       </collision>
     </link>
     <frame name="canvas_top_center">
-      <pose relative_to="canvas_link">-0.5 0 0.0 0 0 0</pose>
+      <pose relative_to="canvas_link">-0.6 0 0.0 0 0 0</pose>
     </frame>
   </model>
 </sdf>

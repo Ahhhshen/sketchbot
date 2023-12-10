@@ -2,10 +2,6 @@
 - add_model:
     name: canvas
     file: file:///home/shaw/Desktop/6.4210_Final_Project/sketchbot/models/canvas.sdf
-    default_free_body_pose: 
-        canvas_link:
-            translation: [0.5, 0, 0]
-            rotation: !Rpy { deg: [0.0, -45.0, 0.0 ]}
 
 - add_weld:
     parent: world
