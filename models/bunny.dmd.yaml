@@ -8,7 +8,7 @@
 
 - add_model:
      name: bunny
-     file: file:///home/shaw/Desktop/6.4210_Final_Project/sketchbot/models/bunny.sdf
+     file: file:///Users/MauraKelleher/Desktop/Sketchbot_wrapper/sketchbot/models/bunny.sdf
      default_free_body_pose: 
         bunny_link:
             translation: [1.5, 0, 0]
