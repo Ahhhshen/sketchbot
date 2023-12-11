@@ -1,7 +1,7 @@
 
 - add_model:
     name: canvas
-    file: file:///Users/MauraKelleher/Desktop/Sketchbot_wrapper/sketchbot/models/canvas.sdf
+    file: file:///home/shaw/Desktop/6.4210_Final_Project/sketchbot/models/canvas.sdf
 
 - add_weld:
     parent: world

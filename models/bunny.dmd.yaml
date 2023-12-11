@@ -8,9 +8,15 @@
 
 - add_model:
      name: bunny
-     file: file:///Users/MauraKelleher/Desktop/Sketchbot_wrapper/sketchbot/models/bunny.sdf
+     file: file:///home/shaw/Desktop/6.4210_Final_Project/sketchbot/models/bunny.sdf
      default_free_body_pose: 
         bunny_link:
             translation: [1.5, 0, 0]
             rotation: !Rpy { deg: [90.0, 0.0, -90.0 ]}
 
+- add_weld:
+    parent: bunny_origin
+    child: bunny::bunny_link
+    X_PC:
+        translation: [1.5, 0, 0]
+        rotation: !Rpy { deg: [90.0, 0.0, -90.0]}

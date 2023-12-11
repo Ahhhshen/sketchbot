@@ -1,7 +1,7 @@
 
 - add_model:
     name: chalk
-    file: file:///Users/MauraKelleher/Desktop/Sketchbot_wrapper/sketchbot/models/chalk.sdf
+    file: file:///home/shaw/Desktop/6.4210_Final_Project/sketchbot/models/chalk.sdf
 
 - add_weld:
     parent: wsg::left_finger 
