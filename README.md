@@ -12,4 +12,4 @@ b. Activate the environment: `source env/bin/activate`. You’ll have to do this
 ## Install Pydrake
 Install manipulation. It should automatically install the required Drake version. Run:
 
-`pip install manipulation --upgrade --extra-index-url https://drake-packages.csail.mit.edu/whl/nightly/`
+`pip install manipulation==2023.12.10 --extra-index-url https://drake-packages.csail.mit.edu/whl/nightly/`
